@@ -3,4 +3,5 @@ export type ChatMessage = {
   text: string;
   sender: 'user' | 'assistant';
   createdAt: number;
+  isImage?: boolean;
 }; 

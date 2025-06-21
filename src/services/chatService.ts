@@ -19,8 +19,14 @@ export const sendImagePrompt = async (prompt: string): Promise<string> => {
     { prompt },
     { headers: { 'Content-Type': 'application/json' } }
   );
-  if (response.data.status === 'success') {
+  
+  if (response.data.status === 'success' && response.data.imageUrl) {
+    return response.data.imageUrl;
+  }
+  
+  if (response.data.status === 'success' && response.data.text) {
     return response.data.text;
   }
-  throw new Error('API Error');
+
+  throw new Error('API Error or invalid image response');
 }; 

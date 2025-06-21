@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  scrollbar-width: none;
 
   &--user {
     display: flex;
@@ -24,9 +25,12 @@
   }
 
   &__avatar {
-    width: 32px;
-    height: 32px;
+    width: 50px !important;
+    height: 50px !important;
     background: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 
     &--assistant {
       color: #424242;
@@ -107,6 +111,14 @@
       padding: 2px 4px;
       border-radius: 4px;
     }
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
   }
 }
 
