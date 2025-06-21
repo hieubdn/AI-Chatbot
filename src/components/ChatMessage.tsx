@@ -1,8 +1,12 @@
 import React from 'react';
-import { Box, Typography, Avatar } from '@mui/material';
+import { Box, Avatar } from '@mui/material';
 import { ChatMessage as ChatMessageType } from '../types/chat';
 import { ChatBot, User } from '../assets/svg';
 import '../assets/styles/ChatMessage.scss';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 interface Props {
   message: ChatMessageType;
@@ -11,6 +15,15 @@ interface Props {
 export const ChatMessage: React.FC<Props> = ({ message }) => {
   const isUser = message.sender === 'user';
   
+  let processedText = message.text;
+  if (
+    message.sender === 'assistant' &&
+    processedText.includes('\n') &&
+    !processedText.startsWith('```')
+  ) {
+    processedText = '```javascript\n' + processedText + '\n```';
+  }
+
   return (
     <Box className={`chat-message ${isUser ? 'chat-message--user' : ''}`}>
       <Avatar
@@ -23,7 +36,32 @@ export const ChatMessage: React.FC<Props> = ({ message }) => {
         className={`chat-message__bubble ${isUser ? 'chat-message__bubble--user' : 'chat-message__bubble--assistant'}`}
         aria-label={isUser ? 'User message' : 'Assistant message'}
       >
-        <Typography className="chat-message__text" variant="body1">{message.text}</Typography>
+        <div className="chat-message__text">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm]}
+            components={{
+              code({ node, className, children, ...props }) {
+                const match = /language-(\w+)/.exec(className || '');
+                return match ? (
+                  <SyntaxHighlighter
+                    className="code-block"
+                    style={atomDark}
+                    language={match[1]}
+                    PreTag="div"
+                  >
+                    {String(children).replace(/\n$/, '')}
+                  </SyntaxHighlighter>
+                ) : (
+                  <code className={className} {...props}>
+                    {children}
+                  </code>
+                );
+              },
+            }}
+          >
+            {processedText}
+          </ReactMarkdown>
+        </div>
       </Box>
     </Box>
   );
