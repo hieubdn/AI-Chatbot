@@ -7,6 +7,20 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    .chat-message__text {
+      pre {
+        background-color: #8a6845;
+        code {
+          color: white;
+        }
+      }
+
+      code {
+        background-color: #8a6845;
+        color: white;
+      }
+    }
   }
 
   &__avatar {
@@ -73,11 +87,26 @@
         border-width: 0 12px 12px 0;
         border-color: transparent #e0e0e0 transparent transparent;
       }
+
+      .chat-message__text {
+        pre,
+        code {
+          background-color: transparent !important;
+        }
+      }
     }
   }
 
   &__text {
     margin: 0;
+
+    code:not([class*="language-"]) {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #f0f0f0;
+      color: #333;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
   }
 }
 
@@ -89,5 +118,14 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.code-block {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
   }
 }
