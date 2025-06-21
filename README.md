@@ -1,5 +1,5 @@
 
-<h1 align="center"> IG AI Chatbot</h1>
+<h1 align="center"> _hiubdn AI Chatbot</h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/last-commit/hieulee1102/ai-chabot?style=flat" />
@@ -26,11 +26,11 @@
 
 
 ## Introduction
-**IG AI Chatbot** is a modern AI-powered chatbot application built with React and TypeScript, delivering a smooth, intuitive, and user-friendly chat experience. The app features a familiar chat bubble interface that clearly separates user and AI assistant messages, making it easy to follow conversations.
+**_hiubdn AI Chatbot** is a modern AI-powered chatbot application built with React and TypeScript, delivering a smooth, intuitive, and user-friendly chat experience. The app features a familiar chat bubble interface that clearly separates user and AI assistant messages, making it easy to follow conversations.
 
-Key features of **IG AI Chatbot** include: advanced Markdown rendering, allowing structured text formatting such as lists, bold, and italics; syntax highlighting for code blocks, making it easier to read and understand code snippets—just like in VS Code; "typing" indicators for both the user and AI, enhancing the real-time conversational experience; auto-scrolling to the latest message to ensure users never miss a reply; and user-friendly error handling, providing clear notifications when something goes wrong so users can easily retry.
+Key features of **_hiubdn AI Chatbot** include: advanced Markdown rendering, allowing structured text formatting such as lists, bold, and italics; syntax highlighting for code blocks, making it easier to read and understand code snippets—just like in VS Code; "typing" indicators for both the user and AI, enhancing the real-time conversational experience; auto-scrolling to the latest message to ensure users never miss a reply; and user-friendly error handling, providing clear notifications when something goes wrong so users can easily retry.
 
-Combining modern design, practical features, and optimized performance, **IG AI Chatbot** is an ideal tool for communication, customer support, or integration into intelligent service platforms.
+Combining modern design, practical features, and optimized performance, **_hiubdn AI Chatbot** is an ideal tool for communication, customer support, or integration into intelligent service platforms.
 
 
 ## 📦 Installation & Usage

@@ -47,6 +47,7 @@ export function useChat() {
         text: reply,
         sender: 'assistant',
         createdAt: Date.now(),
+        isImage,
       });
     } catch (e) {
       setAssistantTyping(false);
