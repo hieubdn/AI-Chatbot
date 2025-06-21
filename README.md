@@ -1,45 +1,37 @@
-# IG AI Chatbot
+
+<h1 align="center"> IG AI Chatbot</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/last-commit/hieulee1102/ai-chabot?style=flat-square" />
-  <img src="https://img.shields.io/badge/updated-June%202025-blue?style=flat-square" />
-  <img src="https://img.shields.io/github/languages/top/hieulee1102/ai-chabot?style=flat-square" />
-  <img src="https://img.shields.io/github/languages/count/hieulee1102/ai-chabot?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/hieulee1102/ai-chabot?style=flat" />
+  <img src="https://img.shields.io/badge/Updated-June%202025-blue?style=flat" />
+  <img src="https://img.shields.io/github/languages/top/hieulee1102/ai-chabot?style=flat" />
+  <img src="https://img.shields.io/github/languages/count/hieulee1102/ai-chabot?style=flat" />
 </p>
 
 ---
 
-<p align="center"><em>A simple AI chatbot web app built with React, TypeScript, and Material-UI. Interact with an AI assistant via a modern, responsive interface with support for text and image-based responses.</em></p>
+### <p align="center">Built with the tools and technologies:</p>
 
 <p align="center">
-  <img src="https://github.com/hieulee1102/ai-chabot/assets/101757890/5836d507-68b2-4d51-863a-23d26532822a" alt="app-preview" width="70%" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Sass-CC6699?style=flat&logo=sass&logoColor=white" />
+  <img src="https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white" />
+  <img src="https://img.shields.io/badge/Material--UI-0081CB?style=flat&logo=mui&logoColor=white" />
+  <img src="https://img.shields.io/badge/React%20Query-FF4154?style=flat&logo=react-query&logoColor=white" /> <br/>
+  <img src="https://img.shields.io/badge/React--Syntax--Highlighter-282C34?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Axios-671ddf?style=flat&logo=axios&logoColor=white" />
+  <img src="https://img.shields.io/badge/NPM-CB3837?style=flat&logo=npm&logoColor=white" />
 </p>
 
----
 
-## 🚀 Tech Stack
+## Introduction
+**IG AI Chatbot** is a modern AI-powered chatbot application built with React and TypeScript, delivering a smooth, intuitive, and user-friendly chat experience. The app features a familiar chat bubble interface that clearly separates user and AI assistant messages, making it easy to follow conversations.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
-  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
-  <img src="https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white" />
-  <img src="https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react-query&logoColor=white" />
-  <img src="https://img.shields.io/badge/axios-671ddf?&style=for-the-badge&logo=axios&logoColor=white" />
-  <img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white" />
-</p>
+Key features of **IG AI Chatbot** include: advanced Markdown rendering, allowing structured text formatting such as lists, bold, and italics; syntax highlighting for code blocks, making it easier to read and understand code snippets—just like in VS Code; "typing" indicators for both the user and AI, enhancing the real-time conversational experience; auto-scrolling to the latest message to ensure users never miss a reply; and user-friendly error handling, providing clear notifications when something goes wrong so users can easily retry.
 
----
+Combining modern design, practical features, and optimized performance, **IG AI Chatbot** is an ideal tool for communication, customer support, or integration into intelligent service platforms.
 
-## ✨ Features
-
-- 💬 Sleek and intuitive chat interface
-- 🤖 Real-time AI text responses
-- 🖼️ AI image generation support (triggered by `/image`)
-- ⏳ Typing indicators for both user and bot
-- 📱 Fully responsive on desktop and mobile
-
----
 
 ## 📦 Installation & Usage
 
@@ -75,13 +67,7 @@
 | `npm run build`   | Builds the app for production.             |
 | `npm test`        | Launches the test runner.                  |
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-See the [LICENSE](./LICENSE) file for more details.
 
 ---
 
-<p align="center"><strong>Made with ❤️ by <a href="https://github.com/hieulee1102">@hieulee1102</a></strong></p>
+<p align="center"><strong>Made with ❤️ by <a href="https://github.com/hieubdn">@hieubdn</a></strong></p>
