@@ -1,0 +1,23 @@
+.chat-input {
+  width: 70%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 24px !important;
+  border: 2px solid #e0e0e0;
+  box-shadow: none;
+
+  &__input {
+    margin-left: 8px;
+    flex: 1;
+  }
+
+  &__send-button {
+    color: #A67C52;
+
+    &:disabled {
+      color: #bdbdbd;
+    }
+  }
+}
